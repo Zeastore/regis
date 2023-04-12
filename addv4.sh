@@ -68,7 +68,7 @@ add-ip() {
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
     git remote add origin https://github.com/Zeastore/regis
-    git push -f https://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@github.com/Zeastore/regis.git &> /dev/null
+    git push -f https://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@github.com/Zeastore/regis.git &> /dev/null
     rm -rf /root/ipvps
     clear
     echo -e "${CYAN}Succesfully Add IP Address${NC}"
@@ -110,7 +110,7 @@ del-ip() {
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
     git remote add origin https://github.com/Zeastore/regis
-    git push -f https://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@github.com/Zeastore/regis.git &> /dev/null
+    git push -f https://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@github.com/Zeastore/regis.git &> /dev/null
     rm -rf /root/ipvps
     clear
     echo "Succesfully Deleted The IP Address"
@@ -147,7 +147,7 @@ renew-ip() {
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
     git remote add origin https://github.com/Zeastore/regis
-    git push -f https://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@github.com/Zeastore/regis.git &> /dev/null
+    git push -f https://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@github.com/Zeastore/regis.git &> /dev/null
     rm -rf /root/ipvps
     clear
     echo "Succesfully Renew The IP Address"
