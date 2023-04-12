@@ -25,7 +25,7 @@ END='\e[0m'
 add-ip() {
     today=`date -d "0 days" +"%Y-%m-%d"`
     ran=$(date +%s)
-    git clone https://github.com/Zeadxt/izinsc.git /root/ipvps/ &> /dev/null
+    git clone https://github.com/Zeastore/regis.git /root/ipvps/ &> /dev/null
     clear
     read -p "Input IP Address : " ip
     CLIENT_EXISTS=$(grep -w $ip /root/ipvps/ip | wc -l)
@@ -60,15 +60,15 @@ add-ip() {
     echo "### ${name} $ran ${exp2} ${ip}" >> /root/ipvps/ip
     fi
     cd /root/ipvps
-    git config --global user.email "zeaking476@gmail.com" &> /dev/null
-    git config --global user.name "Zeadxt" &> /dev/null
+    git config --global user.email "pribadi.no99@gmail.com" &> /dev/null
+    git config --global user.name "Zeastore" &> /dev/null
     rm -rf .git &> /dev/null
     git init &> /dev/null
     git add . &> /dev/null
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/Zeadxt/izinsc
-    git push -f https://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@github.com/Zeadxt/izinsc.git &> /dev/null
+    git remote add origin https://github.com/Zeastore/regis
+    git push -f https://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@github.com/Zeastore/regis.git &> /dev/null
     rm -rf /root/ipvps
     clear
     echo -e "${CYAN}Succesfully Add IP Address${NC}"
@@ -85,7 +85,7 @@ add-ip() {
 
 del-ip() {
     rm -rf /root/ipvps
-    git clone https://github.com/Zeadxt/izinsc.git /root/ipvps/ &> /dev/null
+    git clone https://github.com/Zeastore/regis.git /root/ipvps/ &> /dev/null
     clear
     echo "List IP Address Have Been Registered"
     echo ""
@@ -102,15 +102,15 @@ del-ip() {
     sed -i "/^### $name $oid $exp $ipdel/,/^},{/d" /root/ipvps/ip
     fi
     cd /root/ipvps
-    git config --global user.email "zeaking476@gmail.com" &> /dev/null
-    git config --global user.name "Zeadxt" &> /dev/null
+    git config --global user.email "pribadi.no99@gmail.com" &> /dev/null
+    git config --global user.name "Zeastore" &> /dev/null
     rm -rf .git &> /dev/null
     git init &> /dev/null
     git add . &> /dev/null
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/Zeadxt/izinsc
-    git push -f https://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@github.com/Zeadxt/izinsc.git &> /dev/null
+    git remote add origin https://github.com/Zeastore/regis
+    git push -f https://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@github.com/Zeastore/regis.git &> /dev/null
     rm -rf /root/ipvps
     clear
     echo "Succesfully Deleted The IP Address"
@@ -120,7 +120,7 @@ del-ip() {
 
 renew-ip() {
     rm -rf /root/ipvps
-    git clone https://github.com/Zeadxt/izinsc.git /root/ipvps/ &> /dev/null
+    git clone https://github.com/Zeastore/regis.git /root/ipvps/ &> /dev/null
     clear
     echo "List IP Address Have Been Registered"
     echo ""
@@ -139,15 +139,15 @@ renew-ip() {
     exp4=`date -d "$exp3 days" +"%Y-%m-%d"`
     sed -i "s/### $name $oid $exp $ipdel/### $name $oid $exp4 $ipdel/g" /root/ipvps/ip
     cd /root/ipvps
-    git config --global user.email "zeaking476@gmail.com" &> /dev/null
-    git config --global user.name "Zeadxt" &> /dev/null
+    git config --global user.email "pribadi.no99@gmail.com" &> /dev/null
+    git config --global user.name "Zeastore" &> /dev/null
     rm -rf .git &> /dev/null
     git init &> /dev/null
     git add . &> /dev/null
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/Zeadxt/izinsc
-    git push -f https://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@github.com/Zeadxt/izinsc.git &> /dev/null
+    git remote add origin https://github.com/Zeastore/regis
+    git push -f https://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@github.com/Zeastore/regis.git &> /dev/null
     rm -rf /root/ipvps
     clear
     echo "Succesfully Renew The IP Address"
